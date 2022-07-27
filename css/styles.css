@@ -125,7 +125,7 @@ a {
   color: var(--sub-text-color);
   display: flex;
   align-items: center;
-  transition: var(--animation);
+  transition: color var(--animation);
 }
 .contacts:hover,
 .contacts:focus {
@@ -219,7 +219,7 @@ a {
   border-color: transparent;
   padding: 10px 30px;
   cursor: pointer;
-  transition: fill var(--animation), background-color var(--animation);
+  transition: background-color var(--animation);
 }
 .main-button:hover,
 .main-button:focus {
@@ -269,10 +269,13 @@ a {
   gap: 30px;
 }
 .work-list-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
+  height: 70px;
   bottom: 0;
   width: 100%;
-  padding: 27px 15px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -349,7 +352,7 @@ a {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: fill var(--animation), background-color var(--animation);
+  transition: fill var(--animation), border-color var(--animation);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -378,7 +381,7 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  transition: var(--animation);
+  transition: color var(--animation);
 }
 .address-item:hover,
 .address-item:focus {
@@ -387,7 +390,7 @@ a {
 }
 .address {
   color: var(--white-color);
-  transition: var(--animation);
+  transition: color var(--animation);
 }
 .address:hover,
 .address:focus {
@@ -416,7 +419,7 @@ a {
   border-radius: 50%;
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: fill var(--animation), background-color var(--animation);
+  transition: background-color var(--animation);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -455,12 +458,16 @@ a {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: border-color var(--animation);
 }
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-input:focus-within {
+  border-color: var(--accent-color);
 }
 .footer-btn-thumb {
   width: 200px;
@@ -501,7 +508,7 @@ a {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: fill var(--animation), background-color var(--animation);
+  transition: color var(--animation), background-color var(--animation);
 }
 .button:hover,
 .button:focus {
@@ -525,7 +532,7 @@ a {
 }
 .product-link {
   display: block;
-  transition: var(--animation);
+  transition: opacity var(--animation);
 }
 .product-link:hover,
 .product-link:focus {
@@ -569,7 +576,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
   transform: translateY(100%);
-  transition: var(--animation);
+  transition: transform var(--animation);
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
@@ -593,7 +600,7 @@ img {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .form {
+.backdrop.is-hidden .form-container {
   transform: translate(-50%, -50%) scale(0);
 }
 .form-container {
@@ -622,6 +629,7 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--black-color);
+  transition: fill var(--animation);
 }
 .close-btn:hover,
 .close-btn:focus {
@@ -652,6 +660,7 @@ img {
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: fill var(--animation), border-color var(--animation);
 }
 .form-input {
   padding-left: 42px;
@@ -698,7 +707,6 @@ img {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-
 .form-field-terms {
   display: flex;
   align-items: center;
