@@ -395,7 +395,7 @@
       <label for="footer-email" class="footer-label">Підпишіться на розсилку</label>
         <div class="footer-field">
           <input id="footer-email" type="email" name="email" class="footer-input" placeholder="E-mail"></input>
-          <button type="button" class="footer-btn">
+          <button type="submit" class="footer-btn">
             Підписатися 
             <svg class="footer-send-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
@@ -449,25 +449,20 @@
               </textarea>
             </div>
         </div>
-        <div class="form-field-terms">
-          <div class="form-terms-thumb">
-            <input id="checkbox" class="form-checkbox" type="checkbox" name="agree-terms" value="agree-terms" checked />
-            <div class="checkbox-thumb">
-              <svg class="icon-check" width="16" height="15">
+        <div class="form-terms-thumb">
+            <label class="form-terms">
+              <input class="form-checkbox" type="checkbox" name="agree-terms" value="agree-terms" checked />
+              <span class="icon-check"></span>
+              <svg class="icon-check icon-active" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <svg class="icon-check-none" width="16" height="15">
-                <use href="./images/icons.svg#icon-none-access"></use>
-              </svg>
-            </div>
-          </div>
-            <label for="checkbox" class="form-terms">Погоджуюся з розсилкою та приймаю 
-              <a href="" class="form-terms-accent">Умови договору</a> 
+              Погоджуюся з розсилкою та приймаю &nbsp;
+              <a href="" class="form-terms-accent"> Умови договору</a> 
             </label>
-          </div>
-          <div class="form-btn-thumb">
-            <button class="form-btn" type="button">Відправити</button>
-          </div>
+        </div>
+        <div class="form-btn-thumb">
+          <button class="form-btn" type="submit">Відправити</button>
+        </div>
       </form>
     </div>    
   </div>
