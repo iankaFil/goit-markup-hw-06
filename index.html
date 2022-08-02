@@ -50,7 +50,7 @@
         </div>
       </header>
 <!--------------------MAIN SECTION--------------------->
-      <main>
+      <main class="hero">
         <section class="main section">
           <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
@@ -393,7 +393,7 @@
     </div>
     <div class="third-footer-container">
       <label for="footer-email" class="footer-label">Підпишіться на розсилку</label>
-        <div class="footer-field">
+        <form class="footer-field" name="signup_form" autocomplete="on">
           <input id="footer-email" type="email" name="email" class="footer-input" placeholder="E-mail"></input>
           <button type="submit" class="footer-btn">
             Підписатися 
@@ -401,7 +401,7 @@
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
-        </div>
+        </form>
     </div>
   </div>
 </footer>
@@ -444,9 +444,8 @@
         </div> 
         <div class="form-field last-field">
           <label for="comment" class="form-label">Коментар</label>
-            <div class="form-field-thumb last-field">
-              <textarea class="form-textarea" id="comment" type="text" rows="8" placeholder="Введіть текст">
-              </textarea>
+            <div class="form-field-thumb">
+              <textarea class="form-textarea" id="comment" type="text" rows="8" placeholder="Введіть текст"></textarea>
             </div>
         </div>
         <div class="form-terms-thumb">
